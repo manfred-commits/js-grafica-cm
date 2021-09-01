@@ -8,5 +8,38 @@
 /* /regole di reset */
 
 /* regole generali */
-
+body{
+    background-color: brown;
+}
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    border: 1px solid black;
+}
 /* /regole generali */
+
+/* sezione game container */
+
+/* soluzione container con grid */
+/* #game-container{
+    background-color: chocolate;
+    margin: auto;
+    width: 1000px;
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(10, 1fr);
+} */
+/* /soluzione container con grid */
+
+
+
+
+#game-container{
+    background-color: chocolate;
+    margin: auto;
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* /sezione game container */
