@@ -14,8 +14,11 @@ body{
 .square{
     width: 100px;
     height: 100px;
-    background-color: crimson;
+    background-color: green;
     border: 1px solid black;
+}
+.red{
+    background-color: red;
 }
 /* /regole generali */
 

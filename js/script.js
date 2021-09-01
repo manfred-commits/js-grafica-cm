@@ -8,7 +8,7 @@
 
 // 3.Tramite una funzione javascript disegnare in pagina la griglia
 function makePlayground(num,id){
-    for(var i = 0; i < num; i++){
+    for(var i = 1; i < num+1; i++){
         document.getElementById(id).innerHTML+=`<div class="square">${i}</div>`;
     }
 
@@ -41,7 +41,14 @@ var id ="game-container";
 
 makePlayground(numeroUtente, id);
 
-// 4.
+//4. Al click su una cella dovrà essere mostrato con un alert il numero della cella e il suo background diventerà rosso.
+
+document.getElementById("game-container").addEventListener("click",
+    function(event){
+        event.target.classList.toggle("red");
+        alert(event.target.innerHTML);
+    }
+);
 
 
 
